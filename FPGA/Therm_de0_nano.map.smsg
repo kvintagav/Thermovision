@@ -1,0 +1,56 @@
+Warning (10268): Verilog HDL information at beaten_pix.v(71): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at beaten_pix.v(14): object "OUT_ADC1" differs only in case from object "out_adc1" in the same scope
+Info (10281): Verilog HDL Declaration information at beaten_pix.v(15): object "OUT_ADC2" differs only in case from object "out_adc2" in the same scope
+Warning (10268): Verilog HDL information at uart_out.v(74): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at average.v(15): object "COUNT_OUT" differs only in case from object "count_out" in the same scope
+Info (10281): Verilog HDL Declaration information at average.v(16): object "CONTR_SUM" differs only in case from object "contr_sum" in the same scope
+Info (10281): Verilog HDL Declaration information at average.v(11): object "ADC_IN1" differs only in case from object "adc_in1" in the same scope
+Info (10281): Verilog HDL Declaration information at average.v(12): object "ADC_IN2" differs only in case from object "adc_in2" in the same scope
+Info (10281): Verilog HDL Declaration information at average.v(19): object "SUM1" differs only in case from object "sum1" in the same scope
+Info (10281): Verilog HDL Declaration information at average.v(26): object "SUM2" differs only in case from object "sum2" in the same scope
+Warning (10268): Verilog HDL information at sdram_sdram.v(175): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at memory_control.v(53): object "BANK_PED" differs only in case from object "bank_ped" in the same scope
+Warning (10268): Verilog HDL information at simulate_bol.v(54): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at simulate_bol.v(75): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at simulate_bol.v(13): object "ERROR" differs only in case from object "error" in the same scope
+Info (10281): Verilog HDL Declaration information at simulate_bol.v(11): object "DATAVALID" differs only in case from object "datavalid" in the same scope
+Warning (10268): Verilog HDL information at control.v(142): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at control.v(44): object "BEATEN_PIX_LEVEL" differs only in case from object "beaten_pix_level" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(21): object "RESET_MEM" differs only in case from object "reset_mem" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(22): object "RESET_SPI" differs only in case from object "reset_spi" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(40): object "MEM_ENABLE" differs only in case from object "mem_enable" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(39): object "TEST" differs only in case from object "test" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(24): object "BL_ENABLE" differs only in case from object "bl_enable" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(25): object "ADC_ENABLE" differs only in case from object "adc_enable" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(19): object "CNT_ENABLE" differs only in case from object "cnt_enable" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(20): object "OUT_ENABLE" differs only in case from object "out_enable" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(36): object "SUB_CONTRAST" differs only in case from object "sub_contrast" in the same scope
+Info (10281): Verilog HDL Declaration information at control.v(37): object "MULT_CONTRAST" differs only in case from object "mult_contrast" in the same scope
+Warning (10268): Verilog HDL information at bufer_line.v(28): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at VGA.v(14): object "COUNTER_ROW" differs only in case from object "counter_row" in the same scope
+Warning (10268): Verilog HDL information at bufer_out_line.v(25): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at bufer_out_line.v(59): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at bol_640_control.v(42): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at bol_640_control.v(101): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at bol_640_control.v(24): object "CNT_ROW" differs only in case from object "cnt_row" in the same scope
+Info (10281): Verilog HDL Declaration information at rgb_enable.v(11): object "RED" differs only in case from object "red" in the same scope
+Info (10281): Verilog HDL Declaration information at rgb_enable.v(12): object "GREEN" differs only in case from object "green" in the same scope
+Info (10281): Verilog HDL Declaration information at rgb_enable.v(13): object "BLUE" differs only in case from object "blue" in the same scope
+Warning (10268): Verilog HDL information at bufer_ped.v(29): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at bufer_ped.v(73): always construct contains both blocking and non-blocking assignments
+Warning (10273): Verilog HDL warning at bidirec.v(14): extended using "x" or "z"
+Warning (10268): Verilog HDL information at bufer_in_one_line.v(27): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at bufer_in_dual_line.v(43): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at bufer_in_dual_dual_line.v(29): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at bufer_out_low_line.v(24): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at contrast.v(59): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at contrast.v(15): object "MIN" differs only in case from object "min" in the same scope
+Info (10281): Verilog HDL Declaration information at contrast.v(16): object "MAX" differs only in case from object "max" in the same scope
+Info (10281): Verilog HDL Declaration information at contrast.v(21): object "MULT_CONTRAST" differs only in case from object "mult_contrast" in the same scope
+Info (10281): Verilog HDL Declaration information at contrast.v(10): object "ENABLE" differs only in case from object "enable" in the same scope
+Warning (10268): Verilog HDL information at ped_control.v(70): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at switch_addr.v(3): object "INPUT_ADDR" differs only in case from object "input_addr" in the same scope
+Info (10281): Verilog HDL Declaration information at top_cnt.v(7): object "HORIZONTAL" differs only in case from object "horizontal" in the same scope
+Info (10281): Verilog HDL Declaration information at top_cnt.v(8): object "VERTICAL" differs only in case from object "vertical" in the same scope
+Info (10281): Verilog HDL Declaration information at top_cnt.v(10): object "CHANGE" differs only in case from object "change" in the same scope
+Info (10281): Verilog HDL Declaration information at top_cnt.v(11): object "INT_MK" differs only in case from object "int_mk" in the same scope

@@ -1,0 +1,365 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 408 464)
+	(text "memory_control" (rect 5 0 104 12)(font "Arial" ))
+	(text "inst" (rect 8 432 36 444)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK100" (rect 0 0 42 12)(font "Arial" ))
+		(text "CLK100" (rect 21 27 63 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK25" (rect 0 0 35 12)(font "Arial" ))
+		(text "CLK25" (rect 21 43 56 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "GLOBAL_RESET" (rect 0 0 84 12)(font "Arial" ))
+		(text "GLOBAL_RESET" (rect 21 59 105 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "RESET" (rect 0 0 35 12)(font "Arial" ))
+		(text "RESET" (rect 21 75 56 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "MODE[31..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "MODE[31..0]" (rect 21 91 98 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "LINE1" (rect 0 0 35 12)(font "Arial" ))
+		(text "LINE1" (rect 21 107 56 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "MEM_ENABLE" (rect 0 0 70 12)(font "Arial" ))
+		(text "MEM_ENABLE" (rect 21 123 91 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "TYPE" (rect 0 0 28 12)(font "Arial" ))
+		(text "TYPE" (rect 21 139 49 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "NUM_CHAN" (rect 0 0 56 12)(font "Arial" ))
+		(text "NUM_CHAN" (rect 21 155 77 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "CAN_IN[13..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "CAN_IN[13..0]" (rect 21 171 113 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "DATA_MEM_IN[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "DATA_MEM_IN[15..0]" (rect 21 187 148 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "BUF_EN" (rect 0 0 42 12)(font "Arial" ))
+		(text "BUF_EN" (rect 21 203 63 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "END_OPERATION" (rect 0 0 92 12)(font "Arial" ))
+		(text "END_OPERATION" (rect 21 219 113 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "CTR_ROW_IN[9..0]" (rect 0 0 113 12)(font "Arial" ))
+		(text "CTR_ROW_IN[9..0]" (rect 21 235 134 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "WRITE_IN_EN" (rect 0 0 77 12)(font "Arial" ))
+		(text "WRITE_IN_EN" (rect 21 251 98 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "CTR_ROW_OUT[9..0]" (rect 0 0 120 12)(font "Arial" ))
+		(text "CTR_ROW_OUT[9..0]" (rect 21 267 141 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "READ_OUT_EN" (rect 0 0 77 12)(font "Arial" ))
+		(text "READ_OUT_EN" (rect 21 283 98 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "END_READ" (rect 0 0 56 12)(font "Arial" ))
+		(text "END_READ" (rect 21 299 77 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "BANK_PED[1..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "BANK_PED[1..0]" (rect 21 315 120 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "ADDR_READ_PED[12..0]" (rect 0 0 141 12)(font "Arial" ))
+		(text "ADDR_READ_PED[12..0]" (rect 21 331 162 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "SHIFT_ADDR_PED[2..0]" (rect 0 0 141 12)(font "Arial" ))
+		(text "SHIFT_ADDR_PED[2..0]" (rect 21 347 162 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "WRITE_ROW_PED_MATH" (rect 0 0 127 12)(font "Arial" ))
+		(text "WRITE_ROW_PED_MATH" (rect 21 363 148 375)(font "Arial" ))
+		(line (pt 0 368)(pt 16 368)(line_width 1))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "READ_ROW_PED_MATH" (rect 0 0 120 12)(font "Arial" ))
+		(text "READ_ROW_PED_MATH" (rect 21 379 141 391)(font "Arial" ))
+		(line (pt 0 384)(pt 16 384)(line_width 1))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "DATA_FROM_PED_MATH[13..0]" (rect 0 0 177 12)(font "Arial" ))
+		(text "DATA_FROM_PED_MATH[13..0]" (rect 21 395 198 407)(font "Arial" ))
+		(line (pt 0 400)(pt 16 400)(line_width 3))
+	)
+	(port
+		(pt 392 32)
+		(output)
+		(text "RESET_CLK_IN" (rect 0 0 84 12)(font "Arial" ))
+		(text "RESET_CLK_IN" (rect 287 27 371 39)(font "Arial" ))
+		(line (pt 392 32)(pt 376 32)(line_width 1))
+	)
+	(port
+		(pt 392 48)
+		(output)
+		(text "BUF_IN_EN" (rect 0 0 63 12)(font "Arial" ))
+		(text "BUF_IN_EN" (rect 308 43 371 55)(font "Arial" ))
+		(line (pt 392 48)(pt 376 48)(line_width 1))
+	)
+	(port
+		(pt 392 64)
+		(output)
+		(text "RESET_CLK_OUT" (rect 0 0 92 12)(font "Arial" ))
+		(text "RESET_CLK_OUT" (rect 279 59 371 71)(font "Arial" ))
+		(line (pt 392 64)(pt 376 64)(line_width 1))
+	)
+	(port
+		(pt 392 80)
+		(output)
+		(text "BUF_OUT_EN" (rect 0 0 70 12)(font "Arial" ))
+		(text "BUF_OUT_EN" (rect 301 75 371 87)(font "Arial" ))
+		(line (pt 392 80)(pt 376 80)(line_width 1))
+	)
+	(port
+		(pt 392 96)
+		(output)
+		(text "CAN_OUT[13..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "CAN_OUT[13..0]" (rect 272 91 371 103)(font "Arial" ))
+		(line (pt 392 96)(pt 376 96)(line_width 3))
+	)
+	(port
+		(pt 392 112)
+		(output)
+		(text "RESET_CLK_PED" (rect 0 0 92 12)(font "Arial" ))
+		(text "RESET_CLK_PED" (rect 279 107 371 119)(font "Arial" ))
+		(line (pt 392 112)(pt 376 112)(line_width 1))
+	)
+	(port
+		(pt 392 128)
+		(output)
+		(text "BUF_PED_EN" (rect 0 0 70 12)(font "Arial" ))
+		(text "BUF_PED_EN" (rect 301 123 371 135)(font "Arial" ))
+		(line (pt 392 128)(pt 376 128)(line_width 1))
+	)
+	(port
+		(pt 392 144)
+		(output)
+		(text "CAN_PED[13..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "CAN_PED[13..0]" (rect 272 139 371 151)(font "Arial" ))
+		(line (pt 392 144)(pt 376 144)(line_width 3))
+	)
+	(port
+		(pt 392 160)
+		(output)
+		(text "DATA_MEM_OUT[15..0]" (rect 0 0 134 12)(font "Arial" ))
+		(text "DATA_MEM_OUT[15..0]" (rect 237 155 371 167)(font "Arial" ))
+		(line (pt 392 160)(pt 376 160)(line_width 3))
+	)
+	(port
+		(pt 392 176)
+		(output)
+		(text "C_BANK[1..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "C_BANK[1..0]" (rect 287 171 371 183)(font "Arial" ))
+		(line (pt 392 176)(pt 376 176)(line_width 3))
+	)
+	(port
+		(pt 392 192)
+		(output)
+		(text "C_ROW_ADDRESS[12..0]" (rect 0 0 141 12)(font "Arial" ))
+		(text "C_ROW_ADDRESS[12..0]" (rect 230 187 371 199)(font "Arial" ))
+		(line (pt 392 192)(pt 376 192)(line_width 3))
+	)
+	(port
+		(pt 392 208)
+		(output)
+		(text "C_READ" (rect 0 0 42 12)(font "Arial" ))
+		(text "C_READ" (rect 329 203 371 215)(font "Arial" ))
+		(line (pt 392 208)(pt 376 208)(line_width 1))
+	)
+	(port
+		(pt 392 224)
+		(output)
+		(text "C_WRITE" (rect 0 0 49 12)(font "Arial" ))
+		(text "C_WRITE" (rect 322 219 371 231)(font "Arial" ))
+		(line (pt 392 224)(pt 376 224)(line_width 1))
+	)
+	(port
+		(pt 392 240)
+		(output)
+		(text "RESET_CLK_MATH_PED" (rect 0 0 127 12)(font "Arial" ))
+		(text "RESET_CLK_MATH_PED" (rect 244 235 371 247)(font "Arial" ))
+		(line (pt 392 240)(pt 376 240)(line_width 1))
+	)
+	(port
+		(pt 392 256)
+		(output)
+		(text "BUFER_EN_PED_MATH" (rect 0 0 120 12)(font "Arial" ))
+		(text "BUFER_EN_PED_MATH" (rect 251 251 371 263)(font "Arial" ))
+		(line (pt 392 256)(pt 376 256)(line_width 1))
+	)
+	(port
+		(pt 392 272)
+		(output)
+		(text "DATA_TO_PED_MATH[13..0]" (rect 0 0 162 12)(font "Arial" ))
+		(text "DATA_TO_PED_MATH[13..0]" (rect 209 267 371 279)(font "Arial" ))
+		(line (pt 392 272)(pt 376 272)(line_width 3))
+	)
+	(parameter
+		"PERIOD"
+		"3400"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_IDLE"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_READ"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_WRITE"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_WRITE_REQ"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_READ_REQ"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_WRITE_PED"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_READ_PED"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_READ_PED_REQ"
+		"7"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_WRITE_PED_MATH"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_READ_PED_MATH"
+		"9"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 376 432)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 408 -64 508 16))
+)

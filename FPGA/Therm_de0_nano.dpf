@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="ADC_CLOCK" direction="Output" source="Hierarchy Database" diff_pair_node="ADC_CLOCK_n" >
+		</pin>
+		<pin name="ADC_CLOCK_n" direction="Output" source="Hierarchy Database" diff_pair_node="ADC_CLOCK" >
+		</pin>
+		<pin name="ADC_DCO" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_DCO_n" >
+		</pin>
+		<pin name="ADC_DCO_n" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_DCO" >
+		</pin>
+		<pin name="ADC_FCO" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_FCO_n" >
+		</pin>
+		<pin name="ADC_FCO_n" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_FCO" >
+		</pin>
+		<pin name="ADC_VIDEO1" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_VIDEO1_n" >
+		</pin>
+		<pin name="ADC_VIDEO1_n" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_VIDEO1" >
+		</pin>
+		<pin name="ADC_VIDEO2" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_VIDEO2_n" >
+		</pin>
+		<pin name="ADC_VIDEO2_n" direction="Input" source="Hierarchy Database" diff_pair_node="ADC_VIDEO2" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

@@ -1,0 +1,277 @@
+
+`include "define.v"
+
+
+module memory_control(
+
+input wire CLK100,
+input wire GLOBAL_RESET,
+input wire RESET,
+input wire [`MODE_MAX:0] MODE,
+
+input wire  LINE1,
+input wire MEM_ENABLE,
+input wire [19:0] CNT_ALL,
+input wire TYPE,
+input wire NUM_CHAN,
+
+output  BUF_IN_EN,
+input wire [`ADC_WIDHT-1:0] CAN_IN,
+
+output  BUF_OUT_EN,
+output  [`ADC_WIDHT-1:0] CAN_OUT,
+
+
+output  BUF_PED_EN,
+output  [`ADC_WIDHT-1:0] CAN_PED,
+
+
+output [15:0] DATA_MEM_OUT,
+input wire [15:0] DATA_MEM_IN,
+input wire BUF_EN,
+input wire END_OPERATION,
+output [1:0]  C_BANK, 
+output [12:0] C_ROW_ADDRESS, 
+output    C_READ, 
+output    C_WRITE,
+
+input wire [9:0]CTR_ROW_IN,
+input wire [9:0]CTR_ROW_OUT,
+input wire WRITE_IN_EN,
+input wire READ_OUT_EN
+
+
+);
+
+
+reg reset_state;
+
+reg [5:0]bank_read=6'b0; 
+reg [5:0]bank_dsp=6'b0;
+reg [5:0]bank_save=6'b0;
+
+
+//reg [5:0]cnt_frame=6'b0; 
+reg [3:0]state; 
+reg [9:0]cnt_row;
+reg [19:0]cnt;
+reg work_mode;
+
+parameter PERIOD=(`PIX_IN_ROW/`NUMB_CHAN+`DELAY_ROW)*10;
+//wire CLK=MEM_ENABLE&CLK100;
+
+
+
+assign C_READ=(state==S_READ) ? 1'b1  :
+(state==S_READ_PED) ? 1'b1  : 
+(state==S_READ_REQ) ? 1'b1  :1'b0 ;
+
+ 
+assign C_WRITE=(state==S_WRITE) ? 1'b1 :
+(state==S_WRITE_PED) ? 1'b1 :
+(state==S_WRITE_REQ) ? 1'b1 : 1'b0 ;
+
+
+assign C_ROW_ADDRESS=(state==S_WRITE) ? CTR_ROW_IN*2*bank_save :
+(state==S_WRITE_REQ) ? CTR_ROW_IN*2*bank_save :
+(state==S_READ_PED) ?  CTR_ROW_IN*2 :
+(state==S_WRITE_PED) ?  CTR_ROW_IN*2 :
+(state==S_READ) ? CTR_ROW_OUT*2*bank_read :
+(state==S_READ_REQ) ? CTR_ROW_OUT*2*bank_read : 14'b0 ;
+
+
+assign C_BANK='b00;
+
+
+assign  BUF_IN_EN=(state==S_WRITE) ? BUF_EN:
+(state==S_WRITE_REQ) ? BUF_EN:
+(state==S_WRITE_PED) ? BUF_EN: 1'b0;
+
+assign  BUF_OUT_EN=(state==S_WRITE) ? BUF_EN:
+(state==S_WRITE_REQ) ? BUF_EN: 1'b0;
+
+assign  BUF_PED_EN=(state==S_READ_PED) ? BUF_EN: 1'b0;
+
+
+assign DATA_MEM_OUT[15:14]=2'b00;
+assign DATA_MEM_OUT[`ADC_WIDHT-1:0]=(state==S_WRITE) ? CAN_IN:  
+(state==S_WRITE_PED) ? CAN_IN:
+(state==S_WRITE_REQ) ? CAN_IN:14'b0;
+
+assign CAN_OUT=(state==S_READ) ? DATA_MEM_IN[`ADC_WIDHT-1:0] : 
+(state==S_READ_REQ) ? DATA_MEM_IN[`ADC_WIDHT-1:0] : 14'b0;
+
+assign CAN_PED=(state==S_READ_PED) ? DATA_MEM_IN[`ADC_WIDHT-1:0] : 14'b0;
+
+
+always @(posedge GLOBAL_RESET or posedge RESET)
+begin
+	if (GLOBAL_RESET)
+	begin
+		bank_save<=6'b000011;
+		bank_read<=6'b000010;
+		bank_dsp<=6'b000001;
+	end
+	else 
+	begin
+	
+      bank_save<=bank_save+1'b1;
+		if (bank_save>`COUNT_FRAME ) bank_save<=1'b1;
+			
+      bank_read<=bank_read+1'b1;
+		if (bank_read>`COUNT_FRAME ) bank_read<=1'b1;
+
+      bank_dsp<=bank_dsp+1'b1;
+		if (bank_dsp>`COUNT_FRAME ) bank_dsp<=1'b1;
+		
+	end
+	
+end
+
+
+
+parameter S_IDLE='b0000;
+parameter S_READ='b0001;
+parameter S_WRITE='b0010;
+
+parameter S_WRITE_REQ='b0011;
+parameter S_READ_REQ='b0100;
+
+parameter S_WRITE_PED='b0101;
+parameter S_READ_PED='b0110;
+
+
+always @(negedge CLK100 or posedge RESET)
+begin
+	if (RESET)
+	begin
+	state<=S_IDLE;
+	end
+	else 
+	begin
+	//	if (MODE[15:8]==`MODE_OUT_SAVE)
+	//	begin	
+			case(state)
+				S_IDLE:begin
+					if (WRITE_IN_EN==1)begin
+						state<=S_WRITE;
+					end
+					else if(READ_OUT_EN==1) begin
+						state<=S_READ;
+					end
+				end
+				S_READ:begin
+					if (WRITE_IN_EN==1)begin
+						state<=S_READ_REQ;
+					end
+					else if(END_OPERATION==1) begin
+						state<=S_IDLE;
+					end
+				end
+				
+				S_WRITE:begin
+					if (READ_OUT_EN==1)begin
+						state<=S_WRITE_REQ;
+					end
+					else if(END_OPERATION==1) begin
+						state<=S_IDLE;
+					end
+				end
+				S_READ_REQ:begin
+					 if(END_OPERATION==1) begin
+						state<=S_WRITE;
+					end
+				end
+				S_WRITE_REQ:begin
+					 if(END_OPERATION==1) begin
+						state<=S_READ;
+					end
+				end
+			/*	READ_PED:begin
+				
+				end
+				
+				WRITE_PED:begin
+				
+				end
+			*/	default: begin
+					state<=S_IDLE;
+				end
+			endcase
+	//	end
+	end
+	
+end
+/*
+reg request=0;
+reg busy_mem=0;
+
+
+always @(posedge END_OPERATION or posedge WRITE_IN_EN or posedge READ_OUT_EN or posedge RESET or posedge CLK100)
+begin
+	if (RESET)
+	begin
+		state<=S_NOP; 
+	end
+	
+	else if (END_OPERATION)
+	begin
+	
+		if (MODE[15:8]==`MODE_OUT_PED_SAVE)
+		begin
+			case(state)
+			S_OUT:begin
+				if (request==1) begin
+					state<=S_PED;
+					request<=0;
+				end
+				else 
+				begin	
+					state<=S_NOP;
+					busy_mem<=0;
+				end
+			end
+			S_PED:begin
+				state<=S_SAVE;
+			end
+			S_SAVE:begin
+				if (request==1) begin
+					state<=S_OUT;
+					request<=0;
+				end
+				else
+				begin
+					state<=S_NOP;	
+					busy_mem<=0;	
+				end	
+			end
+			default:begin
+				state<=S_NOP;
+			end
+
+			endcase
+		end
+	end
+	else if (READ_OUT_EN)
+	begin
+		if (busy_mem==0)
+		begin
+			state<=S_OUT;
+			busy_mem<=1;
+		end	
+		else request<=1;
+	end
+	else if (WRITE_IN_EN)
+	begin
+		if (busy_mem==0)
+		begin
+			state<=S_PED;
+			busy_mem<=1;
+		end	
+		else request<=1;
+	end
+	
+end
+*/
+endmodule
+

@@ -1,0 +1,718 @@
+// Copyright (C) 1991-2011 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// PROGRAM		"Quartus II"
+// VERSION		"Version 11.0 Build 157 04/27/2011 SJ Full Version"
+// CREATED		"Thu Nov 21 13:14:59 2013"
+
+module Therm_sch(
+	CLOCK_50,
+	SPI_NSS,
+	SPI_CLK,
+	SPI_MOSI,
+	ADC_DCO,
+	ADC_FCO,
+	ADC_VIDEO1,
+	ADC_VIDEO2,
+	BL_IN1,
+	BL_IN2,
+	BL_IN3,
+	BL_OUT1,
+	BL_OUT2,
+	BL_OUT3,
+	BL_OUT4,
+	SPI_MISO,
+	ADC_CLOCK,
+	VGA_CLK,
+	DRAM_CAS_N,
+	DRAM_CKE,
+	DRAM_CLK,
+	DRAM_CS_N,
+	DRAM_RAS_N,
+	DRAM_WE_N,
+	CLK10,
+	H_SYNC5,
+	V_SYNC6,
+	TX_UART,
+	BLUE,
+	DRAM_ADDR,
+	DRAM_BA,
+	DRAM_DQ,
+	DRAM_DQM,
+	GREEN,
+	RED
+);
+
+
+input wire	CLOCK_50;
+input wire	SPI_NSS;
+input wire	SPI_CLK;
+input wire	SPI_MOSI;
+input wire	ADC_DCO;
+input wire	ADC_FCO;
+input wire	ADC_VIDEO1;
+input wire	ADC_VIDEO2;
+input wire	BL_IN1;
+input wire	BL_IN2;
+input wire	BL_IN3;
+output wire	BL_OUT1;
+output wire	BL_OUT2;
+output wire	BL_OUT3;
+output wire	BL_OUT4;
+output wire	SPI_MISO;
+output wire	ADC_CLOCK;
+output wire	VGA_CLK;
+output wire	DRAM_CAS_N;
+output wire	DRAM_CKE;
+output wire	DRAM_CLK;
+output wire	DRAM_CS_N;
+output wire	DRAM_RAS_N;
+output wire	DRAM_WE_N;
+output wire	CLK10;
+output wire	H_SYNC5;
+output wire	V_SYNC6;
+output wire	TX_UART;
+output wire	[9:0] BLUE;
+output wire	[12:0] DRAM_ADDR;
+output wire	[1:0] DRAM_BA;
+inout wire	[15:0] DRAM_DQ;
+output wire	[1:0] DRAM_DQM;
+output wire	[9:0] GREEN;
+output wire	[9:0] RED;
+
+wire	ADC_ENABLE;
+wire	BUF_EN_OUT_MODULE;
+wire	BUF_IN_EN;
+wire	BUF_PED_EN;
+wire	C_READ;
+wire	C_WRITE;
+wire	CHANGE_BUF_OUT;
+wire	CLK100;
+wire	CLK100_3ns;
+wire	CLK25;
+wire	CLK50;
+wire	CLK_ALTERA_SYNTHESIZED10;
+wire	CLK_BUF_OUT;
+wire	CLK_UART;
+wire	CNT_BUF_EN;
+wire	[9:0] CNT_ROW_IN;
+wire	[9:0] CNT_ROW_OUT;
+wire	[14:0] DATA_A;
+wire	[14:0] DATA_B;
+wire	[14:0] DATA_S;
+wire	GLOBAL_RESET;
+wire	GLOBAL_RESET_MEM;
+wire	LINE1;
+wire	LOW_SPEED_OUT;
+wire	MEM_ENABLE;
+wire	NUMB_CHAN;
+wire	OUT_ENABLE;
+wire	[9:0] PIX_OUT;
+wire	READ_OUT_EN;
+wire	RESET_BOL;
+wire	RESET_FROM_OUT;
+wire	RESET_FROM_VGA;
+wire	RESET_MEM;
+wire	[14:0] RESULT2;
+wire	TWO_RESET;
+wire	TYPE;
+wire	UART_ENABLE;
+wire	VGA_ENABLE;
+wire	WRITE_IN_EN;
+wire	SYNTHESIZED_WIRE_0;
+wire	[13:0] SYNTHESIZED_WIRE_80;
+wire	[13:0] SYNTHESIZED_WIRE_81;
+wire	[31:0] SYNTHESIZED_WIRE_82;
+wire	SYNTHESIZED_WIRE_4;
+wire	[15:0] SYNTHESIZED_WIRE_5;
+wire	SYNTHESIZED_WIRE_83;
+wire	SYNTHESIZED_WIRE_7;
+wire	SYNTHESIZED_WIRE_84;
+wire	SYNTHESIZED_WIRE_11;
+wire	SYNTHESIZED_WIRE_14;
+wire	SYNTHESIZED_WIRE_15;
+wire	SYNTHESIZED_WIRE_85;
+wire	[13:0] SYNTHESIZED_WIRE_17;
+wire	SYNTHESIZED_WIRE_18;
+wire	[13:0] SYNTHESIZED_WIRE_20;
+wire	[13:0] SYNTHESIZED_WIRE_21;
+wire	[4:0] SYNTHESIZED_WIRE_23;
+wire	[13:0] SYNTHESIZED_WIRE_24;
+wire	SYNTHESIZED_WIRE_25;
+wire	SYNTHESIZED_WIRE_26;
+wire	SYNTHESIZED_WIRE_27;
+wire	SYNTHESIZED_WIRE_28;
+wire	SYNTHESIZED_WIRE_29;
+wire	SYNTHESIZED_WIRE_30;
+wire	SYNTHESIZED_WIRE_31;
+wire	SYNTHESIZED_WIRE_32;
+wire	[9:0] SYNTHESIZED_WIRE_33;
+wire	[9:0] SYNTHESIZED_WIRE_34;
+wire	SYNTHESIZED_WIRE_36;
+wire	SYNTHESIZED_WIRE_86;
+wire	[13:0] SYNTHESIZED_WIRE_38;
+wire	[13:0] SYNTHESIZED_WIRE_39;
+wire	[13:0] SYNTHESIZED_WIRE_40;
+wire	[13:0] SYNTHESIZED_WIRE_41;
+wire	SYNTHESIZED_WIRE_42;
+wire	SYNTHESIZED_WIRE_43;
+wire	SYNTHESIZED_WIRE_44;
+wire	SYNTHESIZED_WIRE_45;
+wire	[14:0] SYNTHESIZED_WIRE_46;
+wire	SYNTHESIZED_WIRE_47;
+wire	[15:0] SYNTHESIZED_WIRE_48;
+wire	SYNTHESIZED_WIRE_49;
+wire	SYNTHESIZED_WIRE_50;
+wire	SYNTHESIZED_WIRE_51;
+wire	SYNTHESIZED_WIRE_52;
+wire	[9:0] SYNTHESIZED_WIRE_53;
+wire	SYNTHESIZED_WIRE_55;
+wire	SYNTHESIZED_WIRE_56;
+wire	SYNTHESIZED_WIRE_57;
+wire	SYNTHESIZED_WIRE_58;
+wire	SYNTHESIZED_WIRE_59;
+wire	SYNTHESIZED_WIRE_60;
+wire	SYNTHESIZED_WIRE_61;
+wire	SYNTHESIZED_WIRE_62;
+wire	[13:0] SYNTHESIZED_WIRE_63;
+wire	[15:0] SYNTHESIZED_WIRE_64;
+wire	SYNTHESIZED_WIRE_66;
+wire	SYNTHESIZED_WIRE_67;
+wire	[13:0] SYNTHESIZED_WIRE_70;
+wire	[1:0] SYNTHESIZED_WIRE_71;
+wire	[12:0] SYNTHESIZED_WIRE_72;
+wire	[15:0] SYNTHESIZED_WIRE_73;
+wire	[15:0] SYNTHESIZED_WIRE_74;
+wire	[15:0] SYNTHESIZED_WIRE_75;
+wire	[13:0] SYNTHESIZED_WIRE_77;
+wire	[13:0] SYNTHESIZED_WIRE_78;
+wire	SYNTHESIZED_WIRE_79;
+
+assign	VGA_CLK = SYNTHESIZED_WIRE_79;
+
+
+
+
+adc_control	b2v_ADC(
+	.CLK(CLK_ALTERA_SYNTHESIZED10),
+	.ADC_ENABLE(ADC_ENABLE),
+	.DCO(ADC_DCO),
+	.FCO(ADC_FCO),
+	.ADC_IN1(ADC_VIDEO1),
+	.ADC_IN2(ADC_VIDEO2),
+	.ADC_CLK(ADC_CLOCK),
+	.ADC_OUT1(SYNTHESIZED_WIRE_38),
+	.ADC_OUT2(SYNTHESIZED_WIRE_40));
+
+assign	SYNTHESIZED_WIRE_67 = RESET_BOL & SYNTHESIZED_WIRE_0;
+
+assign	SYNTHESIZED_WIRE_66 = VGA_ENABLE & RESET_FROM_OUT;
+
+
+average	b2v_average(
+	.CLK(CLK_ALTERA_SYNTHESIZED10),
+	.RESET(RESET_BOL),
+	.TWO_RESET(TWO_RESET),
+	.CNT_ENABLE(CNT_BUF_EN),
+	
+	.ADC_IN1(SYNTHESIZED_WIRE_80),
+	.ADC_IN2(SYNTHESIZED_WIRE_81),
+	.MODE(SYNTHESIZED_WIRE_82),
+	
+	.COUNT_OUT(DATA_B[13:0]));
+
+
+bidirec	b2v_bidirec(
+	.oe(SYNTHESIZED_WIRE_4),
+	.clk(CLK100),
+	.bidir(DRAM_DQ),
+	.inp(SYNTHESIZED_WIRE_5),
+	
+	.outp(SYNTHESIZED_WIRE_74));
+
+
+bufer_in_one_line	b2v_buf_in1(
+	.CLK1(CLK_ALTERA_SYNTHESIZED10),
+	.CLK2(CLK100),
+	.RESET(GLOBAL_RESET),
+	.BUFER_CHANGE(SYNTHESIZED_WIRE_83),
+	.BUFER_IN_EN(CNT_BUF_EN),
+	.BUFER_OUT_EN(SYNTHESIZED_WIRE_7),
+	.start_write(SYNTHESIZED_WIRE_84),
+	.DATA_IN(SYNTHESIZED_WIRE_80),
+	.DATA_OUT(SYNTHESIZED_WIRE_77));
+
+
+bufer_in_one_line	b2v_buf_in2(
+	.CLK1(CLK_ALTERA_SYNTHESIZED10),
+	.CLK2(CLK100),
+	.RESET(GLOBAL_RESET),
+	.BUFER_CHANGE(SYNTHESIZED_WIRE_83),
+	.BUFER_IN_EN(CNT_BUF_EN),
+	.BUFER_OUT_EN(SYNTHESIZED_WIRE_11),
+	.start_write(SYNTHESIZED_WIRE_84),
+	.DATA_IN(SYNTHESIZED_WIRE_81),
+	.DATA_OUT(SYNTHESIZED_WIRE_78));
+
+
+bufer_out_line	b2v_BUFER_OUT(
+	.CLK1(CLK100),
+	.CLK2(CLK_BUF_OUT),
+	.RESET(GLOBAL_RESET),
+	.BUFER_CHANGE(CHANGE_BUF_OUT),
+	.BUFER_IN_EN(SYNTHESIZED_WIRE_14),
+	.BUFER_OUT_EN(BUF_EN_OUT_MODULE),
+	.start_write(SYNTHESIZED_WIRE_15),
+	.NUMB_CHAN(SYNTHESIZED_WIRE_85),
+	.LOW_SPEED_OUT(LOW_SPEED_OUT),
+	.DATA_IN(SYNTHESIZED_WIRE_17),
+	.PIX_OUT(PIX_OUT),
+	.DATA_OUT(DATA_A[13:0]));
+
+
+bufer_ped	b2v_BUFER_PED(
+	.CLK1(CLK100),
+	.CLK2(CLK_BUF_OUT),
+	.RESET(GLOBAL_RESET),
+	.BUFER_CHANGE(CHANGE_BUF_OUT),
+	.BUFER_IN_EN(BUF_PED_EN),
+	.BUFER_OUT_EN(BUF_EN_OUT_MODULE),
+	.start_write(SYNTHESIZED_WIRE_18),
+	.NUMB_CHAN(SYNTHESIZED_WIRE_85),
+	.DATA_IN(SYNTHESIZED_WIRE_20),
+	.DATA_OUT(DATA_S[13:0]));
+
+
+contrast	b2v_contrast(
+	.DATA_IN(SYNTHESIZED_WIRE_21),
+	.MODE_FPGA(SYNTHESIZED_WIRE_82),
+	.MULT(SYNTHESIZED_WIRE_23),
+	.PEDESTAL(SYNTHESIZED_WIRE_24),
+	.DATA_OUT(SYNTHESIZED_WIRE_70));
+
+
+output_module	b2v_inst(
+	.CLK_10(CLK100),
+	.CLK_50(CLK50),
+	.CLK_25(CLK25),
+	.CLK_100(CLK100),
+	.CLK_UART(CLK_UART),
+	.OUT_ENABLE(OUT_ENABLE),
+	.BUF_EN_UART(SYNTHESIZED_WIRE_25),
+	.BUF_CHANGE_UART(SYNTHESIZED_WIRE_26),
+	.READ_EN_UART(SYNTHESIZED_WIRE_27),
+	.RESET_FROM_UART(SYNTHESIZED_WIRE_28),
+	.BUF_CHANGE_VGA(SYNTHESIZED_WIRE_29),
+	.READ_EN_VGA(SYNTHESIZED_WIRE_30),
+	.RESET_FROM_VGA(SYNTHESIZED_WIRE_31),
+	.BUF_EN_VGA(SYNTHESIZED_WIRE_32),
+	.CNT_ROW_UART(SYNTHESIZED_WIRE_33),
+	.CNT_ROW_VGA(SYNTHESIZED_WIRE_34),
+	.MODE(SYNTHESIZED_WIRE_82),
+	.BUFER_EN(BUF_EN_OUT_MODULE),
+	.CLK_BUF(CLK_BUF_OUT),
+	.BUF_CHANGE(CHANGE_BUF_OUT),
+	.READ_EN(READ_OUT_EN),
+	.RESET(RESET_FROM_OUT),
+	.ENABLE_UART(UART_ENABLE),
+	.ENABLE_VGA(VGA_ENABLE),
+	.LOW_SPEED_OUT(LOW_SPEED_OUT),
+	.CNT_ROW(CNT_ROW_OUT));
+
+
+uart_out	b2v_inst1(
+	.CLK_IN(SYNTHESIZED_WIRE_36),
+	.RESET(GLOBAL_RESET),
+	.ENABLE(UART_ENABLE),
+	.VALUE(DATA_A[13:0]),
+	.TX_UART(TX_UART),
+	.RESET_BL(SYNTHESIZED_WIRE_28),
+	.READ_IN_EN(SYNTHESIZED_WIRE_27),
+	.BUF_CHANGE(SYNTHESIZED_WIRE_26),
+	.BUFER_EN(SYNTHESIZED_WIRE_25),
+	.CNT_PIX_OUT(PIX_OUT),
+	.CNT_ROW_OUT(SYNTHESIZED_WIRE_33));
+	defparam	b2v_inst1.IDLE = 0;
+	defparam	b2v_inst1.PERIOD = 20;
+	defparam	b2v_inst1.S_READ_DOWN = 8;
+	defparam	b2v_inst1.S_READ_FIRST_ROW_DOWN = 5;
+	defparam	b2v_inst1.S_READ_FIRST_ROW_UP = 4;
+	defparam	b2v_inst1.S_READ_UP = 7;
+	defparam	b2v_inst1.S_RESET_DOWN = 2;
+	defparam	b2v_inst1.S_RESET_UP = 1;
+	defparam	b2v_inst1.S_WAIT_FERST = 3;
+	defparam	b2v_inst1.S_WAIT_TWO = 6;
+	defparam	b2v_inst1.wait_ferst_delay = 1680;
+	defparam	b2v_inst1.wait_two_delay = 10;
+
+
+
+switch_test_work_adc	b2v_inst11(
+	.TEST(SYNTHESIZED_WIRE_86),
+	.ADC_OUT1_BOL(SYNTHESIZED_WIRE_38),
+	.ADC_OUT1_TEST(SYNTHESIZED_WIRE_39),
+	.ADC_OUT2_BOL(SYNTHESIZED_WIRE_40),
+	.ADC_OUT2_TEST(SYNTHESIZED_WIRE_41),
+	.ADC_OUT1(SYNTHESIZED_WIRE_80),
+	.ADC_OUT2(SYNTHESIZED_WIRE_81));
+
+
+simulate_bol	b2v_inst13(
+	.CLK(SYNTHESIZED_WIRE_42),
+	.RESET(SYNTHESIZED_WIRE_43),
+	.BOL_INT(SYNTHESIZED_WIRE_44),
+	.SERDATA(SYNTHESIZED_WIRE_45),
+	.DATAVALID(SYNTHESIZED_WIRE_58),
+	.LINE1(SYNTHESIZED_WIRE_59),
+	.ERROR(SYNTHESIZED_WIRE_60),
+	.ADC_OUT1(SYNTHESIZED_WIRE_41),
+	.ADC_OUT2(SYNTHESIZED_WIRE_39));
+
+
+lpm_add_sub1	b2v_inst14(
+	.clock(CLK25),
+	.dataa(SYNTHESIZED_WIRE_46),
+	.datab(DATA_S),
+	.result(RESULT2));
+
+
+assign	SYNTHESIZED_WIRE_79 = CLK25 & VGA_ENABLE;
+
+
+assign	SYNTHESIZED_WIRE_36 = CLK_UART & UART_ENABLE;
+
+
+add_average	b2v_inst3(
+	.clock(CLK25),
+	.dataa(DATA_A),
+	.datab(DATA_B),
+	.result(SYNTHESIZED_WIRE_46));
+
+
+control	b2v_inst4(
+	.CLK(CLK_ALTERA_SYNTHESIZED10),
+	.RESET(GLOBAL_RESET),
+	.BYTE_SPI_READY(SYNTHESIZED_WIRE_47),
+	.RESET_LOCAL(RESET_FROM_VGA),
+	.SPI_DATA(SYNTHESIZED_WIRE_48),
+	.TYPE_BAL(TYPE),
+	.RESET_BAL(RESET_BOL),
+	.OUT_ENABLE(VGA_ENABLE),
+	
+	
+	.BL_ENABLE(SYNTHESIZED_WIRE_50),
+	.ADC_ENABLE(ADC_ENABLE),
+	.NUMB_CHAN(NUMB_CHAN),
+	.TEST(SYNTHESIZED_WIRE_86),
+	.MEM_ENABLE(MEM_ENABLE),
+	
+	.INT_TIME(SYNTHESIZED_WIRE_53),
+	.MODE_FPGA(SYNTHESIZED_WIRE_82),
+	.MULT_CONTRAST(SYNTHESIZED_WIRE_23),
+	.SPI_DATA_OUT(SYNTHESIZED_WIRE_75),
+	.SUB_CONTRAST(SYNTHESIZED_WIRE_24));
+	defparam	b2v_inst4.CMD_CONTR = 32'b00000000000000000000000010000000;
+	defparam	b2v_inst4.CMD_MODE = 32'b00000000000000000000000010010000;
+	defparam	b2v_inst4.CMD_MODE1 = 32'b00000000000000000000000010010000;
+	defparam	b2v_inst4.CMD_MODE2 = 32'b00000000000000000000000010010001;
+	defparam	b2v_inst4.CMD_MULT = 32'b00000000000000000000000001010000;
+	defparam	b2v_inst4.CMD_PED = 32'b00000000000000000000000001100000;
+	defparam	b2v_inst4.CMD_PED_SAVE = 32'b00000000000000000000000001100001;
+	defparam	b2v_inst4.CMD_RGB = 32'b00000000000000000000000001110000;
+	defparam	b2v_inst4.CMD_SAVE_PED = 32'b00000000000000000000000010100000;
+	defparam	b2v_inst4.CMD_START = 32'b00000000000000000000000000010000;
+	defparam	b2v_inst4.CMD_STOP = 32'b00000000000000000000000000100000;
+	defparam	b2v_inst4.CMD_SUB = 32'b00000000000000000000000001000000;
+	defparam	b2v_inst4.CMD_SUB1 = 32'b00000000000000000000000001000000;
+	defparam	b2v_inst4.CMD_SUB2 = 32'b00000000000000000000000001000001;
+	defparam	b2v_inst4.CMD_TEST = 32'b00000000000000000000000000110000;
+	defparam	b2v_inst4.MODE = 32'b00000000000000000000000010010000;
+	defparam	b2v_inst4.PED_IDLE = 4'b0000;
+	defparam	b2v_inst4.PED_OUT = 4'b0010;
+	defparam	b2v_inst4.PED_SAVE = 4'b0001;
+	defparam	b2v_inst4.PED_SAVE_REQ = 4'b0011;
+	defparam	b2v_inst4.RECEIVE_CMD = 0;
+	defparam	b2v_inst4.RECEIVE_MODE = 1;
+	defparam	b2v_inst4.START = 32'b00000000000000000000000000010000;
+	defparam	b2v_inst4.STOP = 32'b00000000000000000000000000100000;
+	defparam	b2v_inst4.TIME_SAVE_FRAME = 670;
+	defparam	b2v_inst4.TIME_START_VGA = 300;
+
+
+bol_640_control	b2v_inst5(
+	.CLK(CLK_ALTERA_SYNTHESIZED10),
+	.RESET(SYNTHESIZED_WIRE_49),
+	.BL_ENABLE(SYNTHESIZED_WIRE_50),
+	.BL_DATAVALID(SYNTHESIZED_WIRE_51),
+	.BL_LINE1(LINE1),
+	.BL_ERROR(SYNTHESIZED_WIRE_52),
+	.INT_TIME(SYNTHESIZED_WIRE_53),
+	.BL_MC(SYNTHESIZED_WIRE_55),
+	.BL_RESET(TWO_RESET),
+	.BL_INT(SYNTHESIZED_WIRE_56),
+	.BL_SERDATA(SYNTHESIZED_WIRE_57),
+	.BUF_IN_EN(CNT_BUF_EN),
+	.BUFER_IN_VALID(WRITE_IN_EN),
+	
+	.BUFER_CHANGE(SYNTHESIZED_WIRE_83),
+	.CNT_ROW(CNT_ROW_IN));
+	defparam	b2v_inst5.DELAY_DATAVALID = 9;
+	defparam	b2v_inst5.PERIOD = 340;
+	defparam	b2v_inst5.PIX_ROW = 320;
+
+
+switch_test_work	b2v_inst6(
+	.TEST(SYNTHESIZED_WIRE_86),
+	.CLK(SYNTHESIZED_WIRE_55),
+	.RESET(TWO_RESET),
+	.INT(SYNTHESIZED_WIRE_56),
+	.SERDATA(SYNTHESIZED_WIRE_57),
+	.DATAVALID_BOL(BL_IN1),
+	.LINE1_BOL(BL_IN2),
+	.ERROR_BOL(BL_IN3),
+	.DATAVALID_TEST(SYNTHESIZED_WIRE_58),
+	.LINE1_TEST(SYNTHESIZED_WIRE_59),
+	.ERROR_TEST(SYNTHESIZED_WIRE_60),
+	.CLK_BOL(BL_OUT1),
+	.RESET_BOL(BL_OUT2),
+	.INT_BOL(BL_OUT3),
+	.SERDATA_BOL(BL_OUT4),
+	.DATAVALID(SYNTHESIZED_WIRE_51),
+	.LINE1(LINE1),
+	.ERROR(SYNTHESIZED_WIRE_52),
+	.CLK_TEST(SYNTHESIZED_WIRE_42),
+	.RESET_TEST(SYNTHESIZED_WIRE_43),
+	.INT_TEST(SYNTHESIZED_WIRE_44),
+	.SERDATA_TEST(SYNTHESIZED_WIRE_45));
+
+
+
+memory_control	b2v_memory_control(
+	.CLK100(CLK100),
+	.GLOBAL_RESET(GLOBAL_RESET),
+	.RESET(RESET_FROM_OUT),
+	.LINE1(LINE1),
+	.MEM_ENABLE(MEM_ENABLE),
+	.TYPE(TYPE),
+	.NUM_CHAN(NUMB_CHAN),
+	.BUF_EN(SYNTHESIZED_WIRE_61),
+	.END_OPERATION(SYNTHESIZED_WIRE_62),
+	.WRITE_IN_EN(WRITE_IN_EN),
+	.READ_OUT_EN(READ_OUT_EN),
+	.CAN_IN(SYNTHESIZED_WIRE_63),
+	
+	.CTR_ROW_IN(CNT_ROW_IN),
+	.CTR_ROW_OUT(CNT_ROW_OUT),
+	.DATA_MEM_IN(SYNTHESIZED_WIRE_64),
+	.MODE(SYNTHESIZED_WIRE_82),
+	.BUF_IN_EN(BUF_IN_EN),
+	.BUF_OUT_EN(SYNTHESIZED_WIRE_14),
+	.BUF_PED_EN(BUF_PED_EN),
+	.C_READ(C_READ),
+	.C_WRITE(C_WRITE),
+	.RESET_CLK_PED(SYNTHESIZED_WIRE_18),
+	.RESET_CLK_OUT(SYNTHESIZED_WIRE_15),
+	.RESET_CLK_IN(SYNTHESIZED_WIRE_84),
+	.C_BANK(SYNTHESIZED_WIRE_71),
+	.C_ROW_ADDRESS(SYNTHESIZED_WIRE_72),
+	.CAN_OUT(SYNTHESIZED_WIRE_17),
+	.CAN_PED(SYNTHESIZED_WIRE_20),
+	.DATA_MEM_OUT(SYNTHESIZED_WIRE_73));
+	defparam	b2v_memory_control.PERIOD = 3400;
+	defparam	b2v_memory_control.S_AUTOREF = 5;
+	defparam	b2v_memory_control.S_DSP = 4;
+	defparam	b2v_memory_control.S_IDLE = 32'b00000000000000000000000000000000;
+	defparam	b2v_memory_control.S_NOP = 0;
+	defparam	b2v_memory_control.S_OUT = 1;
+	defparam	b2v_memory_control.S_PED = 3;
+	defparam	b2v_memory_control.S_READ = 32'b00000000000000000000000000000001;
+	defparam	b2v_memory_control.S_READ_PED = 32'b00000000000000000000000000000110;
+	defparam	b2v_memory_control.S_READ_REQ = 32'b00000000000000000000000000000100;
+	defparam	b2v_memory_control.S_SAVE = 2;
+	defparam	b2v_memory_control.S_WRITE = 32'b00000000000000000000000000000010;
+	defparam	b2v_memory_control.S_WRITE_PED = 32'b00000000000000000000000000000101;
+	defparam	b2v_memory_control.S_WRITE_REQ = 32'b00000000000000000000000000000011;
+
+assign	SYNTHESIZED_WIRE_0 =  ~VGA_ENABLE;
+
+assign	SYNTHESIZED_WIRE_49 = SYNTHESIZED_WIRE_66 | SYNTHESIZED_WIRE_67;
+
+
+pedestal_en	b2v_peden(
+	.MODE_FPGA(SYNTHESIZED_WIRE_82),
+	.ped_in(RESULT2[13:0]),
+	.vga_in(DATA_A[13:0]),
+	.ped_out(SYNTHESIZED_WIRE_21));
+
+
+altpll0	b2v_PLL(
+	.inclk0(CLK50),
+	.c0(CLK100),
+	.c1(CLK100_3ns),
+	.c2(CLK25),
+	.c3(CLK_ALTERA_SYNTHESIZED10),
+	.c4(CLK_UART));
+
+
+reset_all	b2v_RESET(
+	.CLK_IN(CLK_ALTERA_SYNTHESIZED10),
+	.RESET(GLOBAL_RESET),
+	.RESET_MEM(GLOBAL_RESET_MEM));
+
+
+jet	b2v_rgb(
+	.en(BUF_EN_OUT_MODULE),
+	.MODE_FPGA(SYNTHESIZED_WIRE_82),
+	.Y(SYNTHESIZED_WIRE_70),
+	.B(BLUE),
+	.G(GREEN),
+	.R(RED));
+
+
+sdram_sdram	b2v_sdram(
+	.clock_100(CLK100),
+	.clock_100_delayed_3ns(CLK100_3ns),
+	.RESET(GLOBAL_RESET_MEM),
+	.C_READ(C_READ),
+	.C_WRITE(C_WRITE),
+	.C_TYPE(TYPE),
+	.C_BANK(SYNTHESIZED_WIRE_71),
+	.C_ROW_ADDRESS(SYNTHESIZED_WIRE_72),
+	.DATA_IN(SYNTHESIZED_WIRE_73),
+	.DRAM_INPUT(SYNTHESIZED_WIRE_74),
+	.BUFER_EN(SYNTHESIZED_WIRE_61),
+	.END_OPERATION(SYNTHESIZED_WIRE_62),
+	.NUMBER_CHANNEL(SYNTHESIZED_WIRE_85),
+	.DRAM_CAS_N(DRAM_CAS_N),
+	.DRAM_CKE(DRAM_CKE),
+	.DRAM_CLK(DRAM_CLK),
+	.DRAM_CS_N(DRAM_CS_N),
+	.DRAM_RAS_N(DRAM_RAS_N),
+	.DRAM_WE_N(DRAM_WE_N),
+	.DRAM_INOUT(SYNTHESIZED_WIRE_4),
+	.DATA_OUT(SYNTHESIZED_WIRE_64),
+	.DRAM_ADDR(DRAM_ADDR),
+	.DRAM_BA(DRAM_BA),
+	.DRAM_DQM(DRAM_DQM),
+	.DRAM_OUTPUT(SYNTHESIZED_WIRE_5));
+	defparam	b2v_sdram.cmd_act = 4'b0011;
+	defparam	b2v_sdram.cmd_brst = 4'b0110;
+	defparam	b2v_sdram.cmd_mrs = 4'b0000;
+	defparam	b2v_sdram.cmd_nop = 4'b0111;
+	defparam	b2v_sdram.cmd_pre = 4'b0010;
+	defparam	b2v_sdram.cmd_read = 4'b0101;
+	defparam	b2v_sdram.cmd_ref = 4'b0001;
+	defparam	b2v_sdram.cmd_write = 4'b0100;
+	defparam	b2v_sdram.s_brst = 9'b010000110;
+	defparam	b2v_sdram.s_brst_id = 9'b010000xxx;
+	defparam	b2v_sdram.s_dr0 = 9'b010110010;
+	defparam	b2v_sdram.s_dr0_id = 5'b01011;
+	defparam	b2v_sdram.s_dr1 = 9'b011000111;
+	defparam	b2v_sdram.s_dr1_id = 5'b01100;
+	defparam	b2v_sdram.s_drdr0 = 9'b111010010;
+	defparam	b2v_sdram.s_drdr0_id = 5'b11101;
+	defparam	b2v_sdram.s_drdr1 = 9'b111100111;
+	defparam	b2v_sdram.s_drdr1_id = 5'b11110;
+	defparam	b2v_sdram.s_drdr2 = 9'b111110111;
+	defparam	b2v_sdram.s_drdr2_id = 5'b11111;
+	defparam	b2v_sdram.s_idle = 9'b000010111;
+	defparam	b2v_sdram.s_idle_id = 5'b00001;
+	defparam	b2v_sdram.s_init_nop_id = 5'b00000;
+	defparam	b2v_sdram.s_ra0 = 9'b010000011;
+	defparam	b2v_sdram.s_ra0_id = 5'b01000;
+	defparam	b2v_sdram.s_ra1 = 9'b010010111;
+	defparam	b2v_sdram.s_ra1_id = 5'b01001;
+	defparam	b2v_sdram.s_ra2 = 9'b010100111;
+	defparam	b2v_sdram.s_ra2_id = 5'b01010;
+	defparam	b2v_sdram.s_rd0 = 9'b100010101;
+	defparam	b2v_sdram.s_rd0_id = 5'b10001;
+	defparam	b2v_sdram.s_rd1 = 9'b100100111;
+	defparam	b2v_sdram.s_rd1_id = 5'b10010;
+	defparam	b2v_sdram.s_rd2 = 9'b100110111;
+	defparam	b2v_sdram.s_rd2_id = 5'b10011;
+	defparam	b2v_sdram.s_rd3 = 9'b101000111;
+	defparam	b2v_sdram.s_rd3_id = 5'b10100;
+	defparam	b2v_sdram.s_rd4 = 9'b101010101;
+	defparam	b2v_sdram.s_rd4_id = 5'b10101;
+	defparam	b2v_sdram.s_rd5 = 9'b101100111;
+	defparam	b2v_sdram.s_rd5_id = 5'b10110;
+	defparam	b2v_sdram.s_rd6 = 9'b101110111;
+	defparam	b2v_sdram.s_rd6_id = 5'b10111;
+	defparam	b2v_sdram.s_rd7 = 9'b110000111;
+	defparam	b2v_sdram.s_rd7_id = 5'b11000;
+	defparam	b2v_sdram.s_rd8 = 9'b110010111;
+	defparam	b2v_sdram.s_rd8_id = 5'b11001;
+	defparam	b2v_sdram.s_rd9 = 9'b110110111;
+	defparam	b2v_sdram.s_rd9_id = 5'b11011;
+	defparam	b2v_sdram.s_rf0 = 9'b000100001;
+	defparam	b2v_sdram.s_rf0_id = 5'b00010;
+	defparam	b2v_sdram.s_rf1 = 9'b000110111;
+	defparam	b2v_sdram.s_rf1_id = 5'b00011;
+	defparam	b2v_sdram.s_rf2 = 9'b001000111;
+	defparam	b2v_sdram.s_rf2_id = 5'b00100;
+	defparam	b2v_sdram.s_rf3 = 9'b001010111;
+	defparam	b2v_sdram.s_rf3_id = 5'b00101;
+	defparam	b2v_sdram.s_rf4 = 9'b001100111;
+	defparam	b2v_sdram.s_rf4_id = 5'b00110;
+	defparam	b2v_sdram.s_rf5 = 9'b001110111;
+	defparam	b2v_sdram.s_rf5_id = 5'b00111;
+	defparam	b2v_sdram.s_wr0 = 9'b011010100;
+	defparam	b2v_sdram.s_wr0_id = 5'b01101;
+	defparam	b2v_sdram.s_wr1 = 9'b011100111;
+	defparam	b2v_sdram.s_wr1_id = 5'b01110;
+
+
+SPIslave	b2v_SPI(
+	.reset_spi(GLOBAL_RESET),
+	.clkIN(CLK_ALTERA_SYNTHESIZED10),
+	.nSSIN(SPI_NSS),
+	.SCKIN(SPI_CLK),
+	.MOSIIN(SPI_MOSI),
+	.dataIN(SYNTHESIZED_WIRE_75),
+	.MISOOUT(SPI_MISO),
+	.byteReceivedOUT(SYNTHESIZED_WIRE_47),
+	.dataOUT(SYNTHESIZED_WIRE_48));
+
+
+switch	b2v_switch(
+	.IN_BUF_EN(BUF_IN_EN),
+	.NUMBER_CHAN(SYNTHESIZED_WIRE_85),
+	.CAN_IN1(SYNTHESIZED_WIRE_77),
+	.CAN_IN2(SYNTHESIZED_WIRE_78),
+	.IN_BUF_EN_CAN1(SYNTHESIZED_WIRE_7),
+	.IN_BUF_EN_CAN2(SYNTHESIZED_WIRE_11),
+	.DATA_OUT(SYNTHESIZED_WIRE_63));
+
+
+VGAdrive	b2v_vgadrive(
+	.clock(SYNTHESIZED_WIRE_79),
+	.reset(GLOBAL_RESET),
+	.enable(VGA_ENABLE),
+	.H(H_SYNC5),
+	.V(V_SYNC6),
+	.BUFER(SYNTHESIZED_WIRE_32),
+	.RESET_BL(SYNTHESIZED_WIRE_31),
+	.BUFER_CHANGE(SYNTHESIZED_WIRE_29),
+	.READ_OUT_EN(SYNTHESIZED_WIRE_30),
+	
+	.row(SYNTHESIZED_WIRE_34));
+
+assign	CLK50 = CLOCK_50;
+assign	CLK10 = CLK_ALTERA_SYNTHESIZED10;
+assign	DATA_A[14] = 0;
+assign	DATA_B[14] = 0;
+assign	DATA_S[14] = 0;
+assign	RESULT2[14] = 0;
+
+endmodule

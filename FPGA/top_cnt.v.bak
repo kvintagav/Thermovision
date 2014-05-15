@@ -1,0 +1,9 @@
+module top_cnt(
+input wire CLK,
+
+);
+
+
+
+
+endmodule

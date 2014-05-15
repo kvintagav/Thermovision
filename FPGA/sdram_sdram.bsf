@@ -1,0 +1,500 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 344 304)
+	(text "sdram_sdram" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst" (rect 8 272 36 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock_100" (rect 0 0 63 12)(font "Arial" ))
+		(text "clock_100" (rect 21 27 84 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clock_100_delayed_3ns" (rect 0 0 148 12)(font "Arial" ))
+		(text "clock_100_delayed_3ns" (rect 21 43 169 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "RESET" (rect 0 0 35 12)(font "Arial" ))
+		(text "RESET" (rect 21 59 56 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "C_BANK[1..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "C_BANK[1..0]" (rect 21 75 105 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "C_ROW_ADDRESS[12..0]" (rect 0 0 141 12)(font "Arial" ))
+		(text "C_ROW_ADDRESS[12..0]" (rect 21 91 162 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "C_READ" (rect 0 0 42 12)(font "Arial" ))
+		(text "C_READ" (rect 21 107 63 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "C_WRITE" (rect 0 0 49 12)(font "Arial" ))
+		(text "C_WRITE" (rect 21 123 70 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "C_TYPE" (rect 0 0 42 12)(font "Arial" ))
+		(text "C_TYPE" (rect 21 139 63 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "DATA_IN[15..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "DATA_IN[15..0]" (rect 21 155 120 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "DRAM_INPUT[15..0]" (rect 0 0 120 12)(font "Arial" ))
+		(text "DRAM_INPUT[15..0]" (rect 21 171 141 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 328 32)
+		(output)
+		(text "BUFER_EN" (rect 0 0 56 12)(font "Arial" ))
+		(text "BUFER_EN" (rect 251 27 307 39)(font "Arial" ))
+		(line (pt 328 32)(pt 312 32)(line_width 1))
+	)
+	(port
+		(pt 328 48)
+		(output)
+		(text "END_OPERATION" (rect 0 0 92 12)(font "Arial" ))
+		(text "END_OPERATION" (rect 215 43 307 55)(font "Arial" ))
+		(line (pt 328 48)(pt 312 48)(line_width 1))
+	)
+	(port
+		(pt 328 64)
+		(output)
+		(text "NUMBER_CHANNEL" (rect 0 0 99 12)(font "Arial" ))
+		(text "NUMBER_CHANNEL" (rect 208 59 307 71)(font "Arial" ))
+		(line (pt 328 64)(pt 312 64)(line_width 1))
+	)
+	(port
+		(pt 328 80)
+		(output)
+		(text "DATA_OUT[15..0]" (rect 0 0 106 12)(font "Arial" ))
+		(text "DATA_OUT[15..0]" (rect 201 75 307 87)(font "Arial" ))
+		(line (pt 328 80)(pt 312 80)(line_width 3))
+	)
+	(port
+		(pt 328 96)
+		(output)
+		(text "DRAM_ADDR[12..0]" (rect 0 0 113 12)(font "Arial" ))
+		(text "DRAM_ADDR[12..0]" (rect 194 91 307 103)(font "Arial" ))
+		(line (pt 328 96)(pt 312 96)(line_width 3))
+	)
+	(port
+		(pt 328 112)
+		(output)
+		(text "DRAM_BA[1..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "DRAM_BA[1..0]" (rect 215 107 307 119)(font "Arial" ))
+		(line (pt 328 112)(pt 312 112)(line_width 3))
+	)
+	(port
+		(pt 328 128)
+		(output)
+		(text "DRAM_CAS_N" (rect 0 0 70 12)(font "Arial" ))
+		(text "DRAM_CAS_N" (rect 237 123 307 135)(font "Arial" ))
+		(line (pt 328 128)(pt 312 128)(line_width 1))
+	)
+	(port
+		(pt 328 144)
+		(output)
+		(text "DRAM_CKE" (rect 0 0 56 12)(font "Arial" ))
+		(text "DRAM_CKE" (rect 251 139 307 151)(font "Arial" ))
+		(line (pt 328 144)(pt 312 144)(line_width 1))
+	)
+	(port
+		(pt 328 160)
+		(output)
+		(text "DRAM_CLK" (rect 0 0 56 12)(font "Arial" ))
+		(text "DRAM_CLK" (rect 251 155 307 167)(font "Arial" ))
+		(line (pt 328 160)(pt 312 160)(line_width 1))
+	)
+	(port
+		(pt 328 176)
+		(output)
+		(text "DRAM_CS_N" (rect 0 0 63 12)(font "Arial" ))
+		(text "DRAM_CS_N" (rect 244 171 307 183)(font "Arial" ))
+		(line (pt 328 176)(pt 312 176)(line_width 1))
+	)
+	(port
+		(pt 328 192)
+		(output)
+		(text "DRAM_DQM[1..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "DRAM_DQM[1..0]" (rect 208 187 307 199)(font "Arial" ))
+		(line (pt 328 192)(pt 312 192)(line_width 3))
+	)
+	(port
+		(pt 328 208)
+		(output)
+		(text "DRAM_RAS_N" (rect 0 0 70 12)(font "Arial" ))
+		(text "DRAM_RAS_N" (rect 237 203 307 215)(font "Arial" ))
+		(line (pt 328 208)(pt 312 208)(line_width 1))
+	)
+	(port
+		(pt 328 224)
+		(output)
+		(text "DRAM_WE_N" (rect 0 0 63 12)(font "Arial" ))
+		(text "DRAM_WE_N" (rect 244 219 307 231)(font "Arial" ))
+		(line (pt 328 224)(pt 312 224)(line_width 1))
+	)
+	(port
+		(pt 328 240)
+		(output)
+		(text "DRAM_OUTPUT[15..0]" (rect 0 0 127 12)(font "Arial" ))
+		(text "DRAM_OUTPUT[15..0]" (rect 180 235 307 247)(font "Arial" ))
+		(line (pt 328 240)(pt 312 240)(line_width 3))
+	)
+	(port
+		(pt 328 256)
+		(output)
+		(text "DRAM_INOUT" (rect 0 0 70 12)(font "Arial" ))
+		(text "DRAM_INOUT" (rect 237 251 307 263)(font "Arial" ))
+		(line (pt 328 256)(pt 312 256)(line_width 1))
+	)
+	(parameter
+		"cmd_nop"
+		"0111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cmd_read"
+		"0101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cmd_brst"
+		"0110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cmd_write"
+		"0100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cmd_act"
+		"0011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cmd_pre"
+		"0010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cmd_ref"
+		"0001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cmd_mrs"
+		"0000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_init_nop_id"
+		"00000XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_init_nop"
+		"000000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_init_pre"
+		"000000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_init_ref"
+		"000000001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_init_mrs"
+		"000000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_idle_id"
+		"00001XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_idle"
+		"000010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf0_id"
+		"00010XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf0"
+		"000100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf1_id"
+		"00011XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf1"
+		"000110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf2_id"
+		"00100XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf2"
+		"001000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf3_id"
+		"00101XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf3"
+		"001010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf4_id"
+		"00110XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf4"
+		"001100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf5_id"
+		"00111XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rf5"
+		"001110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_ra0_id"
+		"01000XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_ra0"
+		"010000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_ra1_id"
+		"01001XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_ra1"
+		"010010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_ra2_id"
+		"01010XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_ra2"
+		"010100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_dr0_id"
+		"01011XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_dr0"
+		"010110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_dr1_id"
+		"01100XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_dr1"
+		"011000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_wr0_id"
+		"01101XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_wr0"
+		"011010100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_wr1_id"
+		"01110XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_wr1"
+		"011100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_brst_id"
+		"010000XXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_brst"
+		"010000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd0_id"
+		"10001XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd0"
+		"100010101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd1_id"
+		"10010XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd1"
+		"100100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd2_id"
+		"10011XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd2"
+		"100110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd3_id"
+		"10100XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd3"
+		"101000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd4_id"
+		"10101XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_rd4"
+		"101010101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_drdr0_id"
+		"11101XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_drdr0"
+		"111010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_drdr1_id"
+		"11110XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_drdr1"
+		"111100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_drdr2_id"
+		"11111XXXX"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_drdr2"
+		"111110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 312 272)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 344 -64 444 16))
+)

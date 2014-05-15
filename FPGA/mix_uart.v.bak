@@ -1,0 +1,9 @@
+module mix_uart(
+
+input wire [`ADC_WIDHT-1:0]DATA_BUF,
+
+output [15:0]VALUE
+
+);
+
+assign DATA_BUF={2'b00,DATA_BUF[`ADC_WIDHT-1:0]};

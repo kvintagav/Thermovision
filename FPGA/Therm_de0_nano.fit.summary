@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 15 14:52:27 2014
+Quartus II 64-Bit Version : 11.0 Build 157 04/27/2011 SJ Full Version
+Revision Name : Therm_de0_nano
+Top-level Entity Name : Therm_sch
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 2,332 / 22,320 ( 10 % )
+    Total combinational functions : 2,025 / 22,320 ( 9 % )
+    Dedicated logic registers : 1,161 / 22,320 ( 5 % )
+Total registers : 1161
+Total pins : 93 / 154 ( 60 % )
+Total virtual pins : 0
+Total memory bits : 64,512 / 608,256 ( 11 % )
+Embedded Multiplier 9-bit elements : 6 / 132 ( 5 % )
+Total PLLs : 1 / 4 ( 25 % )

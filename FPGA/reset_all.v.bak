@@ -1,0 +1,17 @@
+module reset_all(
+input CLK_IN,
+output RESET
+);
+reg [0:20] cnt=21'b0;
+reg out=1'b0;
+//reg out_vid=1'b0;
+
+//parameter frame=200000;
+
+always @(posedge CLK_IN )//or posedge RESET)
+begin
+	if (cnt<=6'b111110) cnt<=cnt+1'b1;
+	else out<=1'b0;
+end
+assign RESET=out; 
+endmodule

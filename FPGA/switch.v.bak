@@ -1,0 +1,13 @@
+module switch(
+input CLK_12_5,
+
+
+input wire [`ADC_WIDHT-1:0]BUF_IN1,
+input wire [`ADC_WIDHT-1:0]BUF_IN2,
+
+output  [`ADC_WIDHT-1:0] DATA_OUT,
+
+);
+
+
+assign DATA_OUT=(CLK_12_5==1) ? BUF_IN1 : BUF_IN2;

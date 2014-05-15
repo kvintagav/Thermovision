@@ -1,0 +1,11 @@
+module rgb_enable(
+
+input wire enable;
+input wire input wire  [`MODE_MAX:0] MODE,
+
+
+);
+
+
+endmodule
+

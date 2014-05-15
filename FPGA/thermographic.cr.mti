@@ -1,0 +1,422 @@
+C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/dev2.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/dev2.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module dev2
+
+Top level modules:
+	dev2
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_test_work_adc.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_test_work_adc.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module switch_test_work_adc
+
+Top level modules:
+	switch_test_work_adc
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/vgatest.vhd {1 {vcom -work work -2002 -explicit C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/vgatest.vhd
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity vgatest
+-- Compiling architecture test of vgatest
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/Therm_de0_nano.v {1 {vlog -work work -nocovercells {C:\ANDREY_KAZAKOV\Thermographic\Quartus_projekt\Thermographic_ver2.1\Therm_de0_nano.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Therm_de0_nano
+
+Top level modules:
+	Therm_de0_nano
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub1_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub1_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_add_sub1
+
+Top level modules:
+	lpm_add_sub1
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult1_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult1_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_mult1
+
+Top level modules:
+	lpm_mult1
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_shiftreg0_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_shiftreg0_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_shiftreg0
+
+Top level modules:
+	lpm_shiftreg0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_pix_mem.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_pix_mem.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module switch_pix_mem
+
+Top level modules:
+	switch_pix_mem
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module switch
+
+Top level modules:
+	switch
+
+} {} {}} {C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/spislave (2).v} {1 {vlog -work work -nocovercells {C:\ANDREY_KAZAKOV\Thermographic\Quartus_projekt\Thermographic_ver2.1\spislave (2).v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module SPIslave
+
+Top level modules:
+	SPIslave
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/all_reset.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/all_reset.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/reset_all.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/reset_all.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module reset_all
+
+Top level modules:
+	reset_all
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_shiftreg0.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_shiftreg0.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_shiftreg0
+
+Top level modules:
+	lpm_shiftreg0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/contrast.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/contrast.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module contrast
+
+Top level modules:
+	contrast
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/Jet.vhd {0 {vcom -work work -2002 -explicit C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/Jet.vhd
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity jet
+-- Compiling architecture jet_arch of jet
+** Error: C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/Jet.vhd(29): Case statement covers only 8 out of 729 cases.
+** Error: C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/Jet.vhd(69): VHDL Compiler exiting
+
+} {9.0 11.0} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bol_320_control.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bol_320_control.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub0.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub0.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_add_sub0
+
+Top level modules:
+	lpm_add_sub0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult0.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult0.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_mult0
+
+Top level modules:
+	lpm_mult0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/altpll0_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/altpll0_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module altpll0
+
+Top level modules:
+	altpll0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_ped.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_ped.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module bufer_ped
+
+Top level modules:
+	bufer_ped
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/pedestal_en.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/pedestal_en.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module pedestal_en
+
+Top level modules:
+	pedestal_en
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_mem_vga.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_mem_vga.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module switch_mem_vga
+
+Top level modules:
+	switch_mem_vga
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/Therm_sch.v {1 {vlog -work work -nocovercells {C:\ANDREY_KAZAKOV\Thermographic\Quartus_projekt\Thermographic_ver2.1\Therm_sch.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Therm_sch
+
+Top level modules:
+	Therm_sch
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/control.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/control.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_line.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_line.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module bufer_line
+
+Top level modules:
+	bufer_line
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/gamma.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/gamma.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module gamma
+
+Top level modules:
+	gamma
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/sdram_sdram.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/sdram_sdram.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module sdram_sdram
+
+Top level modules:
+	sdram_sdram
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub0_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub0_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_add_sub0
+
+Top level modules:
+	lpm_add_sub0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult0_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult0_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_mult0
+
+Top level modules:
+	lpm_mult0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/VGA.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/VGA.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module VGA
+
+Top level modules:
+	VGA
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_pix_in_memory.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_pix_in_memory.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/altpll0.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/altpll0.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module altpll0
+
+Top level modules:
+	altpll0
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/memory_control.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/memory_control.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module memory_control
+
+Top level modules:
+	memory_control
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub1.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_add_sub1.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_add_sub1
+
+Top level modules:
+	lpm_add_sub1
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult1.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/lpm_mult1.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module lpm_mult1
+
+Top level modules:
+	lpm_mult1
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/alt_io_buffer_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/alt_io_buffer_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module alt_io_buffer
+
+Top level modules:
+	alt_io_buffer
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/PLL_CLK_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/PLL_CLK_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module PLL_CLK
+
+Top level modules:
+	PLL_CLK
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bol_640_control.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bol_640_control.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module bol_640_control
+
+Top level modules:
+	bol_640_control
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/spislave.v {2 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/spislave.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module SPIslave
+** Warning: C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/spislave.v(35): [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	SPIslave
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/dev2_delay.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/dev2_delay.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module dev2_delay
+
+Top level modules:
+	dev2_delay
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/sdram.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/sdram.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module sdram
+
+Top level modules:
+	sdram
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_bal.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_bal.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module switch_bal
+
+Top level modules:
+	switch_bal
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/adc_control.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/adc_control.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module adc_control
+
+Top level modules:
+	adc_control
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/xor.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/xor.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/clk12_5.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/clk12_5.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module clk12_5
+
+Top level modules:
+	clk12_5
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_can.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_can.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module switch_can
+
+Top level modules:
+	switch_can
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/RGB.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/RGB.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module RGB
+
+Top level modules:
+	RGB
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/VGAdrive.vhd {1 {vcom -work work -2002 -explicit C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/VGAdrive.vhd
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity vgadrive
+-- Compiling architecture behaviour1 of vgadrive
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/output_module.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/output_module.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module output_module
+
+Top level modules:
+	output_module
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/simulate_bol.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/simulate_bol.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module simulate_bol
+
+Top level modules:
+	simulate_bol
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/sdram_test_component.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/sdram_test_component.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module sdram_test_component_ram_module
+-- Compiling module sdram_test_component
+
+Top level modules:
+	sdram_test_component
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/alt_io_buffer.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/alt_io_buffer.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module alt_io_buffer_iobuf_bidir_p1p
+-- Compiling module alt_io_buffer
+
+Top level modules:
+	alt_io_buffer
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/PLL_CLK.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/PLL_CLK.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module PLL_CLK
+
+Top level modules:
+	PLL_CLK
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/rgb_enable.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/rgb_enable.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module rgb_enable
+
+Top level modules:
+	rgb_enable
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_test_work.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/switch_test_work.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module switch_test_work
+
+Top level modules:
+	switch_test_work
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/swittch_test_work.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/swittch_test_work.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_line_dual.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_line_dual.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module bufer_line_dual
+
+Top level modules:
+	bufer_line_dual
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/dev10.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/dev10.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module dev10
+
+Top level modules:
+	dev10
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_line_in.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_line_in.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module bufer_line
+
+Top level modules:
+	bufer_line
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_out_line.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/bufer_out_line.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module bufer_out_line
+
+Top level modules:
+	bufer_out_line
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/define.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/define.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+
+} {} {}} C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/gamma_bb.v {1 {vlog -work work -nocovercells C:/ANDREY_KAZAKOV/Thermographic/Quartus_projekt/Thermographic_ver2.1/gamma_bb.v
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module gamma
+
+Top level modules:
+	gamma
+
+} {} {}}

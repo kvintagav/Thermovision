@@ -1,0 +1,24 @@
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader.vhd] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_vfr.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_vfr_controller.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_vfr_control_packet_encoder.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_prc.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_prc_core.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_prc_read_master.v] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_package.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_avalon_mm_bursting_master_fifo.vhd] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_avalon_mm_master.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_unpack_data.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_avalon_mm_slave.v] -library lib_framereader
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_stream_output.v] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_pulling_width_adapter.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_general_fifo.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_fifo_usedw_calculator.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_gray_clock_crosser.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_std_logic_vector_delay.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_one_bit_delay.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_logic_fifo.vhd] -library lib_framereader
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_common_ram_fifo.vhd] -library lib_framereader
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) framereader/alt_vipvfr110_vfr.sdc] -library lib_framereader
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID ipds 
+ 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="Default">
+  <columns>
+   <opcodeName visible="0" />
+   <connections preferredWidth="30" />
+   <irq preferredWidth="34" />
+   <export visible="0" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="256" />
+   <clocksource preferredWidth="256" />
+   <frequency preferredWidth="237" />
+  </columns>
+ </clocktable>
+ <window width="1243" height="864" x="0" y="0" />
+ <library
+   expandedCategories="Project,Library/Memories and Memory Controllers/SDRAM,Library,Library/Bridges and Adapters,Library/Memories and Memory Controllers,Library/Bridges and Adapters/Memory Mapped,Library/Digital Signal Processing/Error Detection_Correction,Library/Bridges and Adapters/Streaming,Library/Digital Signal Processing,Library/Avalon Verification Suite,Library/Debug Components" />
+</preferences>

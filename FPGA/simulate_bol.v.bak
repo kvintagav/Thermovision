@@ -1,0 +1,43 @@
+
+`include "define.v"
+
+
+module simulate_bol(
+input reg CLK,
+input wire  RESET,
+input wire BOL_INT,
+
+output DATAVALID,
+output LINE1,
+output reg[13:0]ADC_OUT1,
+output reg[13:0]ADC_OUT2
+
+
+);
+
+reg [10:0]row<=11'b0;
+reg [10:0]pix<=11'b0;
+
+reg [`PERIOD-1:0]shift;
+
+wire datavalid;
+always @(negedge datavalid or posedge RESET)
+begin
+    if (RESET) row<=11'b0;
+	else row<=row+1;
+end
+
+always @(posedge CLK_IN or posedge datavalid)
+begin
+	if (datavalid) pix<=0;
+	else
+	begin
+		shift<=[shift[`PERIOD-2:0],BOL_INT];
+		if (DATAVALID==1) 	pix<=pix+1;
+	end
+end
+assign LINE1=(row==0)? DATAVALID :0;
+assign datavalid=shift[`PIX_IN_ROW+19];
+assign DATAVALID=shift[`PIX_IN_ROW+19];
+endmodule
+

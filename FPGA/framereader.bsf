@@ -1,0 +1,964 @@
+(header "symbol"
+  (version "1.1")
+)
+(symbol
+  (rect 0 0 328 440)
+  (text "framereader"
+    (rect 8 -4 107 16)  
+    (font "Arial"
+      (color 0 64 0)    
+      (font_size 20)    
+    )  
+  )
+  (text "inst"
+    (rect 0 428 18 438)  
+    (font "Arial"
+      (color 255 255 255)    
+      (font_size 10)    
+    )  
+  )
+  (port
+    (pt 0 72)  
+    (input)  
+    (text "clock "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 72)    
+      (pt 0 72)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 128)  
+    (input)  
+    (text "reset "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 128)    
+      (pt 0 128)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 184)  
+    (input)  
+    (text "master_clock "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 184)    
+      (pt 0 184)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 240)  
+    (input)  
+    (text "master_reset "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 240)    
+      (pt 0 240)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 296)  
+    (input)  
+    (text "slave_address[4..0]"
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 296)    
+      (pt 0 296)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 312)  
+    (input)  
+    (text "slave_write "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 312)    
+      (pt 0 312)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 328)  
+    (input)  
+    (text "slave_writedata[31..0]"
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 328)    
+      (pt 0 328)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 344)  
+    (input)  
+    (text "slave_read "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 344)    
+      (pt 0 344)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 360)  
+    (output)  
+    (text "slave_readdata[31..0]"
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 360)    
+      (pt 0 360)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 0 416)  
+    (output)  
+    (text "slave_irq "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 0 416)    
+      (pt 0 416)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 72)  
+    (output)  
+    (text "dout_data[23..0]"
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 72)    
+      (pt 328 72)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 88)  
+    (output)  
+    (text "dout_valid "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 88)    
+      (pt 328 88)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 104)  
+    (input)  
+    (text "dout_ready "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 104)    
+      (pt 328 104)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 120)  
+    (output)  
+    (text "dout_startofpacket "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 120)    
+      (pt 328 120)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 136)  
+    (output)  
+    (text "dout_endofpacket "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 136)    
+      (pt 328 136)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 192)  
+    (output)  
+    (text "master_address[31..0]"
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 192)    
+      (pt 328 192)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 208)  
+    (output)  
+    (text "master_burstcount[5..0]"
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 208)    
+      (pt 328 208)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 224)  
+    (input)  
+    (text "master_readdata[255..0]"
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 224)    
+      (pt 328 224)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 240)  
+    (output)  
+    (text "master_read "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 240)    
+      (pt 328 240)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 256)  
+    (input)  
+    (text "master_readdatavalid "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 256)    
+      (pt 328 256)    
+      (line_width 0)    
+    )  
+  )
+  (port
+    (pt 328 272)  
+    (input)  
+    (text "master_waitrequest "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (text " "
+      (rect 0 0 1 1)    
+      (font "Arial")    
+    )  
+    (line
+      (pt 328 272)    
+      (pt 328 272)    
+      (line_width 0)    
+    )  
+  )
+  (drawing
+    (text "alt_vip_vfr"
+      (rect 264 0 323 12)    
+      (font "Arial"
+        (color 128 128 128)      
+        (font_size 12)      
+      )    
+    )  
+    (text "clock_reset"
+      (rect 8 40 77 54)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "clock"
+      (rect 16 64 38 74)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "clock_reset_reset"
+      (rect 8 96 115 110)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "reset"
+      (rect 16 120 38 130)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "clock_master"
+      (rect 8 152 83 166)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "master_clock"
+      (rect 16 176 70 186)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "clock_master_reset"
+      (rect 8 208 121 222)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "master_reset"
+      (rect 16 232 70 242)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "avalon_slave"
+      (rect 8 264 83 278)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "slave_address[5]"
+      (rect 16 288 88 298)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "slave_write"
+      (rect 16 304 65 314)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "slave_writedata[32]"
+      (rect 16 320 101 330)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "slave_read"
+      (rect 16 336 61 346)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "slave_readdata[32]"
+      (rect 16 352 97 362)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "interrupt_sender"
+      (rect 8 384 108 398)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "slave_irq"
+      (rect 16 408 56 418)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "avalon_streaming_source"
+      (rect 153 40 297 54)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "dout_data[24]"
+      (rect 246 64 304 74)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "dout_valid"
+      (rect 264 80 309 90)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "dout_ready"
+      (rect 259 96 304 106)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "dout_startofpacket"
+      (rect 225 112 306 122)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "dout_endofpacket"
+      (rect 227 128 299 138)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "avalon_master"
+      (rect 224 160 305 174)    
+      (font "Arial"
+        (color 64 0 0)      
+        (font_size 14)      
+      )    
+    )  
+    (text "master_address[32]"
+      (rect 220 184 301 194)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "master_burstcount[6]"
+      (rect 214 200 304 210)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "master_readdata[256]"
+      (rect 209 216 299 226)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "master_read"
+      (rect 254 232 303 242)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "master_readdatavalid"
+      (rect 212 248 302 258)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (text "master_waitrequest"
+      (rect 222 264 303 274)    
+      (font "Arial"
+        (color 48 0 64)      
+        (font_size 10)      
+      )    
+    )  
+    (line
+      (pt 4 28)    
+      (pt 324 28)    
+      (color 240 240 240)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 4 36)    
+      (pt 78 36)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 78 36)    
+      (pt 86 44)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 86 44)    
+      (pt 86 76)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 86 76)    
+      (pt 78 84)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 78 84)    
+      (pt 4 84)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 0 72)    
+      (pt 12 72)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 4 92)    
+      (pt 120 92)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 120 92)    
+      (pt 128 100)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 128 100)    
+      (pt 128 132)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 128 132)    
+      (pt 120 140)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 120 140)    
+      (pt 4 140)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 0 128)    
+      (pt 12 128)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 4 148)    
+      (pt 90 148)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 90 148)    
+      (pt 98 156)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 98 156)    
+      (pt 98 188)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 98 188)    
+      (pt 90 196)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 90 196)    
+      (pt 4 196)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 0 184)    
+      (pt 12 184)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 4 204)    
+      (pt 132 204)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 132 204)    
+      (pt 140 212)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 140 212)    
+      (pt 140 244)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 140 244)    
+      (pt 132 252)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 132 252)    
+      (pt 4 252)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 0 240)    
+      (pt 12 240)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 4 260)    
+      (pt 102 260)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 102 260)    
+      (pt 110 268)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 110 268)    
+      (pt 110 364)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 110 364)    
+      (pt 102 372)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 102 372)    
+      (pt 4 372)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 0 296)    
+      (pt 12 296)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 0 312)    
+      (pt 12 312)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 0 328)    
+      (pt 12 328)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 0 344)    
+      (pt 12 344)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 0 360)    
+      (pt 12 360)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 4 380)    
+      (pt 114 380)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 114 380)    
+      (pt 122 388)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 122 388)    
+      (pt 122 420)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 122 420)    
+      (pt 114 428)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 114 428)    
+      (pt 4 428)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 0 416)    
+      (pt 12 416)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 324 36)    
+      (pt 157 36)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 157 36)    
+      (pt 149 44)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 149 44)    
+      (pt 149 140)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 149 140)    
+      (pt 157 148)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 157 148)    
+      (pt 324 148)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 328 72)    
+      (pt 316 72)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 88)    
+      (pt 316 88)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 104)    
+      (pt 316 104)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 120)    
+      (pt 316 120)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 136)    
+      (pt 316 136)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 324 156)    
+      (pt 213 156)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 213 156)    
+      (pt 205 164)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 205 164)    
+      (pt 205 276)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 205 276)    
+      (pt 213 284)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 213 284)    
+      (pt 324 284)    
+      (color 240 240 240)    
+      (line_width 2)    
+    )  
+    (line
+      (pt 328 192)    
+      (pt 316 192)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 208)    
+      (pt 316 208)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 224)    
+      (pt 316 224)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 240)    
+      (pt 316 240)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 256)    
+      (pt 316 256)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+    (line
+      (pt 328 272)    
+      (pt 316 272)    
+      (color 96 0 128)    
+      (line_width 1)    
+    )  
+  )
+  (fill
+    (color 224 224 224)  
+  )
+)

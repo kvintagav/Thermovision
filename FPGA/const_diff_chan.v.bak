@@ -1,0 +1,17 @@
+module const_diff_chan(
+
+output reg [12..0] CONST_CHAN1;
+output reg [12..0] CONST_CHAN2;
+
+
+);
+
+
+assign CONST_CHAN1=`CONST_DIFF_CHAN1;
+assign CONST_CHAN2=`CONST_DIFF_CHAN2;
+
+
+
+
+
+endmodule

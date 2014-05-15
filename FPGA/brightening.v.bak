@@ -1,0 +1,12 @@
+module brightening(
+INPUT WIRE {18
+
+);
+
+
+
+always @(
+
+)
+endmodule
+
